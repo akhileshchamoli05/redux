@@ -5,9 +5,10 @@ export const incNumber=(num)=>{
     }
 }
 
-export const decNumber=()=>{ 
+export const decNumber=(num)=>{ 
     return{
-        type: "DECREMENT"
+        type: "DECREMENT",
+        payload:num
         
     }
 }
