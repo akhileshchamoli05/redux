@@ -11,9 +11,9 @@ function App() {
    <h1>Increment/Decrement counter</h1>
    <h4>Using React and Redux</h4>
    <div className="quantity">
-    <button className="quantity_minus" title="Decrement" onClick={()=>dispatch(decNumber())}><span>-</span></button>
+    <button className="quantity_minus" title="Decrement by 5" onClick={()=>dispatch(decNumber(5))}><span>-</span></button>
     <input name="quantity" type="text" className="quantity_input" value={myState}/>
-    <button className="quantity_plus" title="Increment" onClick={()=> dispatch(incNumber())}><span>+</span></button>
+    <button className="quantity_plus" title="Increment by 5" onClick={()=> dispatch(incNumber(5))}><span>+</span></button>
    </div>
     </div>
     </>
